@@ -1,0 +1,27 @@
+# 环境
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+
+# 数据（价格缓存、处理后数据、特征，均可由 trend-scan download/scan/features 重建）
+data/
+
+# 日志
+logs/
+*.log
+
+# 论文 PDF 与全文（版权材料，仅本地保留；中文笔记在 docs/paper_repro/）
+papers/
+*.pdf
+
+# 逐样本 / 大文件输出
+*.parquet
+*.csv.gz
+outputs/**/*episodes.csv
+
+# 杂项
+.DS_Store
+.ipynb_checkpoints/

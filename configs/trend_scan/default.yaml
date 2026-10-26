@@ -1,0 +1,53 @@
+# 默认参数网格（stage 1：仅事后描述性统计）
+universe:
+  # source: wikipedia  -> 抓取维基百科当前成分股
+  # source: file       -> 使用 tickers_file 指定的自定义股票列表（CSV，需含 ticker 列），
+  #                       可用于将来接入历史成分股/退市股票，缓解幸存者偏差
+  source: wikipedia
+  tickers_file: null
+
+data:
+  # 分析区间：仅使用该区间内的价格做扫描/拟合（下载仍缓存全部历史）。
+  # 默认 2016-01-01 起约 10 年，用于限制“当前成分股”带来的幸存者偏差。
+  start: "2016-01-01"
+  end: null                 # null = 最新可用日期
+  price_field: Close        # auto_adjust=True 下的 Close 即复权收盘价（拆股+分红）
+  min_history_days: 100     # 有效价格少于该天数的股票不参与扫描
+
+scan:
+  window_lengths: [5, 10, 20, 30, 40]   # 窗口长度 N（窗口内交易日个数，含首尾两天）
+  # 阈值对：上涨 cum_ret >= up；下跌 cum_ret <= down
+  thresholds:
+    - {up: 0.08, down: -0.08}
+
+fit:
+  r2_thresholds: [0.5, 0.7, 0.8, 0.9]   # 汇总时统计 R^2 >= 阈值的样本占比
+  annualization_days: 252
+
+grouping:
+  # 分组列：sector = GICS Sector（11 个一级行业，默认）；sub_industry = GICS Sub-Industry
+  # 两列都会写入 up/down 结果表，这里只决定汇总统计按哪一列分组。注意：均为“当前”分类。
+  by: sector
+  r2_threshold: 0.8       # 分组汇总中统计 R^2 >= 该值的占比
+
+split:
+  # 随机块切分：把数据覆盖期按日历块（默认“年”）以固定种子随机分配到 search / eval。
+  # 窗口首日与末日所在块必须同属一个 split，否则剔除（excluded），避免重叠窗口跨 split 泄漏。
+  method: random_block
+  block_unit: year        # year | quarter | month
+  seed: 42
+  search_fraction: 0.8    # 约 80% 的块用于参数搜索，其余用于独立评估
+
+features:
+  # 机器学习时点特征（uv run trend-scan features）。特征只用 <= t 的价格；fwd_ 前缀列为标签（未来数据）。
+  windows: [5, 10, 20, 30, 40]   # 回看窗口 N（以 t 为窗口末日，含 t 共 N 个交易日）
+  up: 0.08                       # in_up_N:   cum_ret_N >= up
+  down: -0.08                    # in_down_N: cum_ret_N <= down
+  horizons: [5, 10, 20]          # 标签 fwd_ret_H = P_{t+H}/P_t - 1
+  start: null                    # null = 沿用 data.start（2016-01-01）
+  end: null
+  warmup_history: true           # 用 start 之前的缓存历史填充回看窗口（仍只用 <= t 的价格），避免 2016 年初 NaN
+  dtype: float32
+
+output:
+  save_csv_sample_rows: 2000   # 每组结果额外导出 CSV 抽样，便于肉眼查看
