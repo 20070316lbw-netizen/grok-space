@@ -1,0 +1,9 @@
+method,n,score_mean,score_median,scaleadj_mean,rel_rmse_mean,p_mean,leaves_mean
+Baseline,1940,-1.6459,-1.4419,2.7484,0.0136,1.0541,1.0
+AxialGaussian+NoSplit,1940,-1.6949,-1.4802,2.6994,0.0139,1.15,1.949
+AxialGaussian+Fixed,1940,-1.7182,-1.5115,2.676,0.0142,1.0959,2.4139
+AxialGaussian+TimeSpectral,1940,-1.7109,-1.5032,2.6833,0.0141,1.1216,2.1979
+ObliqueSpectral+NoSplit,1940,-1.673,-1.4382,2.7212,0.0138,1.0985,1.5845
+ObliqueSpectral+Fixed,1940,-1.716,-1.5088,2.6782,0.0142,1.0619,2.3304
+ObliqueSpectral+TimeSpectral,1940,-1.6997,-1.4784,2.6945,0.0141,1.0778,1.9407
+RandomWalk(ref),1940,-1.6642,-1.4347,2.73,0.0133,,

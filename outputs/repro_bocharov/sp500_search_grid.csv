@@ -1,0 +1,11 @@
+hp,AxialGaussian+Fixed,AxialGaussian+NoSplit,AxialGaussian+TimeSpectral,Baseline,ObliqueSpectral+Fixed,ObliqueSpectral+NoSplit,ObliqueSpectral+TimeSpectral,RandomWalk(ref)
+"{""affinity_squared"": false, ""min_leaf"": 10}",,,-1.8586,,-1.8424,-1.821,-1.8401,
+"{""affinity_squared"": false, ""min_leaf"": 20}",,,-1.8486,,-1.8377,-1.8198,-1.8372,
+"{""affinity_squared"": false, ""min_leaf"": 30}",,,-1.8356,,-1.8361,-1.8197,-1.8318,
+"{""affinity_squared"": true, ""min_leaf"": 10}",,,-1.8608,,-1.8419,-1.8211,-1.8402,
+"{""affinity_squared"": true, ""min_leaf"": 20}",,,-1.8484,,-1.838,-1.8212,-1.8379,
+"{""affinity_squared"": true, ""min_leaf"": 30}",,,-1.8349,,-1.8366,-1.82,-1.8303,
+"{""min_leaf"": 10}",-1.8571,-1.8433,,,,,,
+"{""min_leaf"": 20}",-1.8431,-1.8326,,,,,,
+"{""min_leaf"": 30}",-1.8376,-1.8282,,,,,,
+{},,,,-1.815,,,,-1.8286

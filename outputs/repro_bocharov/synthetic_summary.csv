@@ -1,0 +1,24 @@
+scenario,method,p,n_leaves,holdout_ll,holdout_rmse,leaf_ari,leaf_purity
+S1_segments,Baseline,2.95,1.0,-2.175,2.104,0.0,0.51
+S1_segments,AxialGaussian+NoSplit,1.35,3.85,-2.103,1.921,0.704,0.977
+S1_segments,AxialGaussian+Fixed,1.35,4.2,-2.106,1.942,0.677,0.977
+S1_segments,AxialGaussian+TimeSpectral,1.3,4.6,-2.121,1.951,0.64,0.976
+S1_segments,ObliqueSpectral+NoSplit,1.4,2.4,-2.085,1.898,0.862,0.981
+S1_segments,ObliqueSpectral+Fixed,1.3,3.7,-2.078,1.903,0.741,0.981
+S1_segments,ObliqueSpectral+TimeSpectral,1.2,3.5,-2.08,1.905,0.759,0.981
+S1_segments,"[root spectral clustering, p=2]",,,,,0.931,0.982
+S2_setar_oblique,Baseline,1.05,1.0,-1.524,1.028,0.05,0.827
+S2_setar_oblique,AxialGaussian+NoSplit,1.25,2.15,-1.429,1.016,0.694,0.986
+S2_setar_oblique,AxialGaussian+Fixed,1.2,2.7,-1.455,1.027,0.576,0.985
+S2_setar_oblique,AxialGaussian+TimeSpectral,1.2,2.8,-1.437,1.016,0.567,0.985
+S2_setar_oblique,ObliqueSpectral+NoSplit,1.05,2.05,-1.429,1.015,0.51,0.979
+S2_setar_oblique,ObliqueSpectral+Fixed,1.1,2.5,-1.448,1.024,0.499,0.975
+S2_setar_oblique,ObliqueSpectral+TimeSpectral,1.15,2.45,-1.444,1.024,0.473,0.977
+S2_setar_oblique,"[root spectral clustering, p=2]",,,,,0.418,0.954
+S3_random_walk,Baseline,1.0,1.0,-1.371,0.947,,
+S3_random_walk,AxialGaussian+NoSplit,1.0,1.15,-1.372,0.948,,
+S3_random_walk,AxialGaussian+Fixed,1.0,1.95,-1.377,0.947,,
+S3_random_walk,AxialGaussian+TimeSpectral,1.0,1.2,-1.372,0.945,,
+S3_random_walk,ObliqueSpectral+NoSplit,1.0,1.05,-1.371,0.947,,
+S3_random_walk,ObliqueSpectral+Fixed,1.0,1.8,-1.38,0.949,,
+S3_random_walk,ObliqueSpectral+TimeSpectral,1.0,1.15,-1.375,0.948,,

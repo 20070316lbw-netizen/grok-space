@@ -1,0 +1,11 @@
+hp,AxialGaussian+Fixed,AxialGaussian+NoSplit,AxialGaussian+TimeSpectral,Baseline,ObliqueSpectral+Fixed,ObliqueSpectral+NoSplit,ObliqueSpectral+TimeSpectral
+"{""affinity_squared"": false, ""min_leaf"": 10}",,,2.6212,,2.63458,2.63145,2.62596
+"{""affinity_squared"": false, ""min_leaf"": 20}",,,2.63079,,2.64535,2.62962,2.63488
+"{""affinity_squared"": false, ""min_leaf"": 30}",,,2.634,,2.63965,2.62966,2.63491
+"{""affinity_squared"": true, ""min_leaf"": 10}",,,2.62256,,2.63508,2.63168,2.62972
+"{""affinity_squared"": true, ""min_leaf"": 20}",,,2.63105,,2.64519,2.63173,2.63464
+"{""affinity_squared"": true, ""min_leaf"": 30}",,,2.63394,,2.63898,2.62924,2.63401
+"{""min_leaf"": 10}",2.62582,2.62399,,,,,
+"{""min_leaf"": 20}",2.6407,2.6271,,,,,
+"{""min_leaf"": 30}",2.63802,2.62826,,,,,
+{},,,,2.62813,,,

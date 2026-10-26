@@ -1,0 +1,9 @@
+method,2017,2024
+Baseline,3.1456,2.3719
+AxialGaussian+NoSplit,3.097,2.3225
+AxialGaussian+Fixed,3.0709,2.3018
+AxialGaussian+TimeSpectral,3.0788,2.3086
+ObliqueSpectral+NoSplit,3.1196,2.3437
+ObliqueSpectral+Fixed,3.074,2.3031
+ObliqueSpectral+TimeSpectral,3.087,2.3225
+RandomWalk(ref),3.1557,2.3266

@@ -1,0 +1,60 @@
+{
+  "experiment_id": "20261026T105415_w30_u0.08_d-0.08_c793b103",
+  "run_timestamp": "20261026T105415",
+  "config_hash": "c793b103",
+  "config_path": "/workspace/sp500_trend/configs/default.yaml",
+  "window": 30,
+  "up_threshold": 0.08,
+  "down_threshold": -0.08,
+  "data_range": {
+    "first_date": "2016-01-04",
+    "last_date": "2026-10-23",
+    "n_tickers_used": 501
+  },
+  "universe": {
+    "source": "wikipedia",
+    "tickers_file": null,
+    "n_tickers": 503,
+    "scrape_date": "2026-10-26",
+    "n_tickers_with_data": 501,
+    "n_tickers_excluded_short_history": 2,
+    "analysis_start": "2016-01-01",
+    "analysis_end": null
+  },
+  "processed_dir": "/workspace/sp500_trend/data/processed/w30_u0.08_d-0.08",
+  "scan_fit_seconds": 1.17,
+  "package_versions": {
+    "python": "3.13.5",
+    "platform": "Linux-6.12.94+-x86_64-with-glibc2.41",
+    "numpy": "2.5.4",
+    "pandas": "3.1.0",
+    "yfinance": "1.7.0",
+    "pyarrow": "26.0.0",
+    "matplotlib": "3.11.2",
+    "pyyaml": "6.0.3"
+  },
+  "note": "ex-post descriptive only; windows use future data within window",
+  "split": {
+    "method": "random_block",
+    "block_unit": "year",
+    "seed": 42,
+    "search_fraction": 0.8,
+    "n_blocks": 11,
+    "n_search_blocks": 9,
+    "search_blocks": [
+      "2016",
+      "2018",
+      "2019",
+      "2020",
+      "2021",
+      "2022",
+      "2023",
+      "2025",
+      "2026"
+    ],
+    "eval_blocks": [
+      "2017",
+      "2024"
+    ]
+  }
+}

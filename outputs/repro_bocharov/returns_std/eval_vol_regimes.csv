@@ -1,0 +1,7 @@
+method,n_split_models,var_ratio_median,var_ratio_random_median,share_ratio_gt_random,share_ratio_gt_2
+AxialGaussian+NoSplit,768,3.5227,2.0024,0.9023,0.9154
+AxialGaussian+Fixed,1476,3.9812,2.0462,0.9377,0.9289
+AxialGaussian+TimeSpectral,1441,3.1539,1.7627,0.9313,0.8702
+ObliqueSpectral+NoSplit,290,2.9839,2.0367,0.8448,0.8517
+ObliqueSpectral+Fixed,1357,3.6507,1.9782,0.9116,0.9138
+ObliqueSpectral+TimeSpectral,1353,3.0065,1.7469,0.901,0.8581

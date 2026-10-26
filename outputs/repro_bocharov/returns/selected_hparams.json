@@ -1,0 +1,25 @@
+{
+  "Baseline": {},
+  "AxialGaussian+NoSplit": {
+    "min_leaf": 30
+  },
+  "AxialGaussian+Fixed": {
+    "min_leaf": 20
+  },
+  "AxialGaussian+TimeSpectral": {
+    "affinity_squared": false,
+    "min_leaf": 30
+  },
+  "ObliqueSpectral+NoSplit": {
+    "affinity_squared": true,
+    "min_leaf": 20
+  },
+  "ObliqueSpectral+Fixed": {
+    "affinity_squared": false,
+    "min_leaf": 20
+  },
+  "ObliqueSpectral+TimeSpectral": {
+    "affinity_squared": false,
+    "min_leaf": 30
+  }
+}

@@ -1,0 +1,16 @@
+group,A,B,A_better,B_better,ties,p_one_sided_B_better,p_one_sided_A_better
+oblique_vs_axial,AxialGaussian+NoSplit,ObliqueSpectral+NoSplit,377,410,1153,0.12699468539472586,0.8872493827300877
+oblique_vs_axial,AxialGaussian+Fixed,ObliqueSpectral+Fixed,264,291,1385,0.1348672213530741,0.8827028450842089
+oblique_vs_axial,AxialGaussian+TimeSpectral,ObliqueSpectral+TimeSpectral,212,201,1527,0.7225398750751767,0.311362416933099
+vs_baseline,Baseline,AxialGaussian+NoSplit,394,374,1172,0.7756957973263692,0.24649408279740206
+vs_baseline,Baseline,AxialGaussian+Fixed,812,664,464,0.999948071786262,6.427648720782734e-05
+vs_baseline,Baseline,AxialGaussian+TimeSpectral,854,596,490,0.9999999999962785,6.590825823962791e-12
+vs_baseline,Baseline,ObliqueSpectral+NoSplit,82,76,1782,0.7111285820672527,0.34546248835119864
+vs_baseline,Baseline,ObliqueSpectral+Fixed,739,602,599,0.999918888252763,0.0001008751212861489
+vs_baseline,Baseline,ObliqueSpectral+TimeSpectral,845,522,573,0.9999999999991168,1.0703538108777752e-18
+vs_reference,ZeroMean(ref),Baseline,1299,641,0,0.9999999999998329,1.3851740970518309e-51
+vs_reference,ZeroMean(ref),AxialGaussian+NoSplit,1160,780,0,0.9999999999998329,3.011057376557701e-18
+vs_reference,ZeroMean(ref),ObliqueSpectral+NoSplit,1279,661,0,0.9999999999998329,1.2364669693847665e-45
+vs_reference,ConstMean(ref),Baseline,1180,760,0,0.9999999999998329,6.47830949387997e-22
+vs_reference,ConstMean(ref),AxialGaussian+NoSplit,1055,885,0,0.9999487736264178,6.171410388828385e-05
+vs_reference,ConstMean(ref),ObliqueSpectral+NoSplit,1158,782,0,0.9999999999998329,6.685642429968079e-18

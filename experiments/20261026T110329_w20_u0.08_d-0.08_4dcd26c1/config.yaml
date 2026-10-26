@@ -1,0 +1,39 @@
+universe:
+  source: wikipedia
+  tickers_file: null
+data:
+  start: '2016-01-01'
+  end: null
+  price_field: Close
+  min_history_days: 100
+scan:
+  window_lengths:
+  - 5
+  - 10
+  - 20
+  - 30
+  - 40
+  thresholds:
+  - up: 0.08
+    down: -0.08
+fit:
+  r2_thresholds:
+  - 0.5
+  - 0.7
+  - 0.8
+  - 0.9
+  annualization_days: 252
+grouping:
+  by: sector
+  r2_threshold: 0.8
+split:
+  method: random_block
+  block_unit: year
+  seed: 42
+  search_fraction: 0.8
+output:
+  save_csv_sample_rows: 2000
+this_experiment:
+  window: 20
+  up: 0.08
+  down: -0.08

@@ -1,0 +1,13 @@
+time_split,A,B,A_better,B_better,ties,p_one_sided_B_better
+NoSplit,Baseline,AxialGaussian+NoSplit,2732,2783,3237,0.2503856013364015
+NoSplit,Baseline,ObliqueSpectral+NoSplit,1734,1893,5125,0.0043468688517897085
+NoSplit,AxialGaussian+NoSplit,ObliqueSpectral+NoSplit,2403,2634,3715,0.0005950704319988279
+Fixed,Baseline,AxialGaussian+Fixed,3662,3775,1315,0.09701645421609081
+Fixed,Baseline,ObliqueSpectral+Fixed,3496,3618,1638,0.07569914654265361
+Fixed,AxialGaussian+Fixed,ObliqueSpectral+Fixed,1231,1372,6149,0.003029073525800845
+TimeSpectral,Baseline,AxialGaussian+TimeSpectral,3188,3393,2171,0.005954012909111548
+TimeSpectral,Baseline,ObliqueSpectral+TimeSpectral,2618,2973,3161,1.0907313334156544e-06
+TimeSpectral,AxialGaussian+TimeSpectral,ObliqueSpectral+TimeSpectral,1739,1942,5071,0.0004339492563538382
+-,RandomWalk(ref),Baseline,4383,4369,0,0.563692166998397
+-,RandomWalk(ref),ObliqueSpectral+NoSplit,4283,4469,0,0.023989069178992784
+-,RandomWalk(ref),AxialGaussian+NoSplit,4381,4371,0,0.5467999341298765

@@ -1,0 +1,227 @@
+{
+  "rows": 1320587,
+  "no_lookahead_truncation": {
+    "samples": 40,
+    "windows": [
+      5,
+      10,
+      20,
+      30,
+      40
+    ],
+    "passed": true,
+    "polyfit_match": true,
+    "failures": []
+  },
+  "scan_consistency": {
+    "5": {
+      "up": {
+        "scan_windows": 40404,
+        "matched_rows": 40404,
+        "flag_all_true": true,
+        "count_equal": true,
+        "feature_flag_count": 40404,
+        "max_rel_diff": {
+          "cum_ret": 5.350301072284041e-08,
+          "slope": 7.3126329991346495e-09,
+          "r2": 5.065471644360997e-07,
+          "resid_std": 1.733516030075731e-07,
+          "slope_tstat": 0.00012023438529521749
+        },
+        "passed": true,
+        "tolerance": "max_rel_diff < 1e-4（slope_tstat < 1e-3：R²≈1 时 SSE 极小，前缀和闭式解的抵消误差会放大到 t 值）"
+      },
+      "down": {
+        "scan_windows": 34596,
+        "matched_rows": 34596,
+        "flag_all_true": true,
+        "count_equal": true,
+        "feature_flag_count": 34596,
+        "max_rel_diff": {
+          "cum_ret": 2.7716547168488148e-08,
+          "slope": 1.4629119970965831e-08,
+          "r2": 5.172160488786659e-07,
+          "resid_std": 1.5953095118667257e-07,
+          "slope_tstat": 0.00011712264754932569
+        },
+        "passed": true,
+        "tolerance": "max_rel_diff < 1e-4（slope_tstat < 1e-3：R²≈1 时 SSE 极小，前缀和闭式解的抵消误差会放大到 t 值）"
+      }
+    },
+    "10": {
+      "up": {
+        "scan_windows": 106040,
+        "matched_rows": 106040,
+        "flag_all_true": true,
+        "count_equal": true,
+        "feature_flag_count": 106040,
+        "max_rel_diff": {
+          "cum_ret": 5.143074283581201e-08,
+          "slope": 3.630975700663619e-09,
+          "r2": 1.8713034477535473e-07,
+          "resid_std": 1.5415691383136032e-08,
+          "slope_tstat": 3.927422408342891e-06
+        },
+        "passed": true,
+        "tolerance": "max_rel_diff < 1e-4（slope_tstat < 1e-3：R²≈1 时 SSE 极小，前缀和闭式解的抵消误差会放大到 t 值）"
+      },
+      "down": {
+        "scan_windows": 78363,
+        "matched_rows": 78363,
+        "flag_all_true": true,
+        "count_equal": true,
+        "feature_flag_count": 78363,
+        "max_rel_diff": {
+          "cum_ret": 2.9673485668624267e-08,
+          "slope": 7.136793211959258e-09,
+          "r2": 2.561320138205758e-07,
+          "resid_std": 2.1217598573930463e-08,
+          "slope_tstat": 3.8423878228638465e-06
+        },
+        "passed": true,
+        "tolerance": "max_rel_diff < 1e-4（slope_tstat < 1e-3：R²≈1 时 SSE 极小，前缀和闭式解的抵消误差会放大到 t 值）"
+      }
+    },
+    "20": {
+      "up": {
+        "scan_windows": 224667,
+        "matched_rows": 224667,
+        "flag_all_true": true,
+        "count_equal": true,
+        "feature_flag_count": 224667,
+        "max_rel_diff": {
+          "cum_ret": 5.7905475932108795e-08,
+          "slope": 2.3838713503199216e-09,
+          "r2": 8.995435873959678e-08,
+          "resid_std": 1.427250007068892e-08,
+          "slope_tstat": 5.621122626176571e-07
+        },
+        "passed": true,
+        "tolerance": "max_rel_diff < 1e-4（slope_tstat < 1e-3：R²≈1 时 SSE 极小，前缀和闭式解的抵消误差会放大到 t 值）"
+      },
+      "down": {
+        "scan_windows": 139492,
+        "matched_rows": 139492,
+        "flag_all_true": true,
+        "count_equal": true,
+        "feature_flag_count": 139492,
+        "max_rel_diff": {
+          "cum_ret": 2.9707363902176098e-08,
+          "slope": 3.674506990347659e-09,
+          "r2": 7.27994781124508e-08,
+          "resid_std": 1.4640942125332401e-08,
+          "slope_tstat": 4.0637104126629686e-07
+        },
+        "passed": true,
+        "tolerance": "max_rel_diff < 1e-4（slope_tstat < 1e-3：R²≈1 时 SSE 极小，前缀和闭式解的抵消误差会放大到 t 值）"
+      }
+    },
+    "30": {
+      "up": {
+        "scan_windows": 311718,
+        "matched_rows": 311718,
+        "flag_all_true": true,
+        "count_equal": true,
+        "feature_flag_count": 311718,
+        "max_rel_diff": {
+          "cum_ret": 5.95204664085069e-08,
+          "slope": 1.845397779032254e-09,
+          "r2": 5.202037622886735e-08,
+          "resid_std": 1.3191717829208471e-08,
+          "slope_tstat": 1.9711035192343969e-07
+        },
+        "passed": true,
+        "tolerance": "max_rel_diff < 1e-4（slope_tstat < 1e-3：R²≈1 时 SSE 极小，前缀和闭式解的抵消误差会放大到 t 值）"
+      },
+      "down": {
+        "scan_windows": 176054,
+        "matched_rows": 176054,
+        "flag_all_true": true,
+        "count_equal": true,
+        "feature_flag_count": 176054,
+        "max_rel_diff": {
+          "cum_ret": 2.9802322387695312e-08,
+          "slope": 3.712986876291957e-09,
+          "r2": 5.075094566819871e-08,
+          "resid_std": 1.4581190643792041e-08,
+          "slope_tstat": 1.526410727154987e-07
+        },
+        "passed": true,
+        "tolerance": "max_rel_diff < 1e-4（slope_tstat < 1e-3：R²≈1 时 SSE 极小，前缀和闭式解的抵消误差会放大到 t 值）"
+      }
+    },
+    "40": {
+      "up": {
+        "scan_windows": 378200,
+        "matched_rows": 378200,
+        "flag_all_true": true,
+        "count_equal": true,
+        "feature_flag_count": 378200,
+        "max_rel_diff": {
+          "cum_ret": 5.867133562978843e-08,
+          "slope": 1.8565314424678903e-09,
+          "r2": 4.800427444440203e-08,
+          "resid_std": 1.4538735160218863e-08,
+          "slope_tstat": 1.6229630389462715e-07
+        },
+        "passed": true,
+        "tolerance": "max_rel_diff < 1e-4（slope_tstat < 1e-3：R²≈1 时 SSE 极小，前缀和闭式解的抵消误差会放大到 t 值）"
+      },
+      "down": {
+        "scan_windows": 199617,
+        "matched_rows": 199617,
+        "flag_all_true": true,
+        "count_equal": true,
+        "feature_flag_count": 199617,
+        "max_rel_diff": {
+          "cum_ret": 2.9802322387695312e-08,
+          "slope": 1.8527513412358587e-09,
+          "r2": 4.055651436907226e-08,
+          "resid_std": 1.6360321652975074e-08,
+          "slope_tstat": 1.127171791369803e-07
+        },
+        "passed": true,
+        "tolerance": "max_rel_diff < 1e-4（slope_tstat < 1e-3：R²≈1 时 SSE 极小，前缀和闭式解的抵消误差会放大到 t 值）"
+      }
+    }
+  },
+  "labels": {
+    "5": {
+      "fwd_ret_matches_shifted_price": true,
+      "last_h_rows_nan": true,
+      "crosses_split_matches": true,
+      "crosses_split_share": 0.007336417612864753
+    },
+    "10": {
+      "fwd_ret_matches_shifted_price": true,
+      "last_h_rows_nan": true,
+      "crosses_split_matches": true,
+      "crosses_split_share": 0.014700773880966298
+    },
+    "20": {
+      "fwd_ret_matches_shifted_price": true,
+      "last_h_rows_nan": true,
+      "crosses_split_matches": true,
+      "crosses_split_share": 0.029513943201682935
+    }
+  },
+  "no_fwd_in_feature_columns": true,
+  "all_passed": true,
+  "flag_true_rates": {
+    "in_up_5": 0.03059967177582607,
+    "in_down_5": 0.02630110137613324,
+    "in_up_10": 0.08033378425666576,
+    "in_down_10": 0.06027628017033086,
+    "in_up_20": 0.17030890593415784,
+    "in_down_20": 0.10830345697046104,
+    "in_up_30": 0.23662272624617853,
+    "in_down_30": 0.1382334708081915,
+    "in_up_40": 0.287653111814266,
+    "in_down_40": 0.15756397757923002,
+    "feat_window_crosses_split_40": 0.07088893167790383
+  },
+  "rows_by_split": {
+    "search": 1076981,
+    "eval": 243606
+  }
+}

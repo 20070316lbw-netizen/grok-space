@@ -1,0 +1,10 @@
+method,2017,2024
+Baseline,3.1418,2.3814
+AxialGaussian+NoSplit,3.12986,2.33244
+AxialGaussian+Fixed,3.09898,2.33971
+AxialGaussian+TimeSpectral,3.09988,2.31542
+ObliqueSpectral+NoSplit,3.14276,2.37581
+ObliqueSpectral+Fixed,3.10458,2.35376
+ObliqueSpectral+TimeSpectral,3.09126,2.32531
+ZeroMean(ref),3.1425,2.36565
+ConstMean(ref),3.13793,2.34587
